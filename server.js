@@ -28,7 +28,13 @@ app.get('/',(req,res)=> {
     res.render('home.hbs',{
         pageTitle: 'HomePage',
         welcomeMessage: 'Welcome!',
-    })  
+    });
+});
+
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects'
+    })
 });
 
 app.get('/about',(req, res) => {
